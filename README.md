@@ -4,6 +4,6 @@ This repository contains all the exercises from **exam rank 02** solved.
 
 There are tests for each exercise to check them.
 
-Put your file into the right directory and type `./test.sh`.
+Put your file into the right directory and type `bash test.sh`.
 
 *Good Luck to everyone!!!*
