@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmateo-t <mmateo-t@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcervill <jcervill@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/29 10:56:48 by mmateo-t          #+#    #+#             */
-/*   Updated: 2020/02/09 16:29:00 by mmateo-t         ###   ########.fr       */
+/*   Created: 2020/07/27 03:59:56 by jcervill          #+#    #+#             */
+/*   Updated: 2020/07/30 02:30:02 by jcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 256
-# endif
+# include<unistd.h>
+# include<stdarg.h>
+# include<stdlib.h>
+# include<fcntl.h>
+# include<stdio.h>
+# define BUFF_SIZE 256
 
-#include <stdlib.h>
-#include <unistd.h>
-
-int	get_next_line(char **line);
+int get_next_line(char **line);
 
 #endif
